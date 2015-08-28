@@ -1,11 +1,21 @@
-# Delete
+# Update
 
-Deletes a new stitch.
+Updates a new stitch.
 
 ## Request
 
-- **Method:** DELETE
+- **Method:** PUT
 - **URL:** /stitches/:id
+- **Body:**
+
+```json
+{
+  "stitch": {
+    "thread_color": String,
+    "length": String
+  }
+}
+```
 
 ## Response
 
@@ -14,11 +24,17 @@ Deletes a new stitch.
 ## Example
 
 ```bash
-curl -X DELETE \
+curl -X PUT \
      -H 'CONTENT_TYPE: application/json' \
      -H 'ACCEPT: application/json' \
      -H 'HTTP_AUTHORIZATION: Basic dXNlcm5hbWU6cGFzc3dvcmQ=' \
      -H 'Content-Type: application/json' \
      -H 'Accept: application/json' \
+     -d '{
+           "stitch": {
+             "thread_color": String,
+             "length": String
+           }
+         }' \
      "http://www.example.com/stitches/:id"
 ```

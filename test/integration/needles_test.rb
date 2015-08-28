@@ -11,8 +11,6 @@ class NeedlesTest < Flunk
     }
     desc      "creates a new needle"
     path      "needles"
-    path      :post
-    path      "needles"
     method    :post
     status    :created
     body      ({ needle: { sharpness: 3, length: 1 }})
