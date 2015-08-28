@@ -1,0 +1,3 @@
+[submodule "vendor/flunk"]
+	path = vendor/flunk
+	url = git@github.com:mysterioustrousers/flunk.git
