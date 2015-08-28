@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Thread color:</strong>
+  <%= @stitch.thread_color %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @stitch.length %>
+</p>
+
+<%= link_to 'Edit', edit_stitch_path(@stitch) %> |
+<%= link_to 'Back', stitches_path %>

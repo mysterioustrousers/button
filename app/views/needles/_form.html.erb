@@ -1,0 +1,25 @@
+<%= form_for(@needle) do |f| %>
+  <% if @needle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@needle.errors.count, "error") %> prohibited this needle from being saved:</h2>
+
+      <ul>
+      <% @needle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sharpness %><br>
+    <%= f.number_field :sharpness %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br>
+    <%= f.number_field :length %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

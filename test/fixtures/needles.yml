@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sharpness: 1
+  length: 1
+
+two:
+  sharpness: 1
+  length: 1

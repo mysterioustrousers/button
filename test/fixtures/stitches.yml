@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thread_color: MyString
+  length: MyString
+
+two:
+  thread_color: MyString
+  length: MyString

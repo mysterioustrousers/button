@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sharpness:</strong>
+  <%= @needle.sharpness %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @needle.length %>
+</p>
+
+<%= link_to 'Edit', edit_needle_path(@needle) %> |
+<%= link_to 'Back', needles_path %>
